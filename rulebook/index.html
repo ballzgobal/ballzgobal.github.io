@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballz Gobal - Rulebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        div {
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .discord-rules {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        #discord-rules-heading {
+            cursor: pointer;
+        }
+        /* Added style for the icon */
+        #discord-rules-heading::before {
+            content: "\25BA"; /* Right arrow HTML entity */
+            margin-right: 5px;
+            transition: transform 0.3s ease; /* Added transition property */
+        }
+        /* Rotates the arrow when the rules are visible */
+        #discord-rules-heading.open::before {
+            transform: rotate(90deg);
+        }
+        .survival-rules {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        #survival-rules-heading {
+            cursor: pointer;
+        }
+        /* Added style for the icon */
+        #survival-rules-heading::before {
+            content: "\25BA"; /* Right arrow HTML entity */
+            margin-right: 5px;
+            transition: transform 0.3s ease; /* Added transition property */
+        }
+        /* Rotates the arrow when the rules are visible */
+        #survival-rules-heading.open::before {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ballz Gobal - Rulebook</h1>
+    </header>
+    <nav>
+        <p>
+            <a href="/">Home</a>
+            <a href="/discord">Discord</a>
+            <a href="/rulebook">Rulebook</a>
+        </p>
+    </nav>
+    <section id="rules">
+        <h2 id="discord-rules-heading">Discord Server Rules</h2>
+        <div class="discord-rules">
+            <p>Please follow these rules to ensure a positive experience for everyone:</p>
+            <p>
+                1. Be Respectful: Treat everyone with respect and kindness. Harassment, hate speech, bullying, or any form of discrimination will not be tolerated.<br>
+                2. No Spamming or Flooding: Avoid excessive posting, flooding chats with repetitive messages, or spamming emojis, images, or links.<br>
+                3. Keep Content Appropriate: Ensure all content shared, including messages, images, videos, and links, is appropriate for all ages. No NSFW (Not Safe For Work) content is allowed.<br>
+                4. No Advertising: Do not promote other Discord servers, Minecraft servers, or external products/services without prior permission from server staff.<br>
+                5. Use Appropriate Channels: Post content in the relevant channels. Off-topic discussions should be kept to a minimum, and conversations should stay on-topic.<br>
+                6. No Cheating or Exploits: Do not use cheats, hacks, exploits, or any unfair advantages in Minecraft gameplay. This includes but is not limited to, X-ray texture packs, duplication glitches, or fly hacks.<br>
+                7. Respect Server Staff: Follow instructions from server moderators and administrators. If you have a concern or question, address it respectfully through direct messages or appropriate channels.<br>
+                8. No Personal Information: Do not share personal information about yourself or others. This includes but is not limited to addresses, phone numbers, emails, or social media profiles.<br>
+                9. Keep Conversations Civil: Engage in constructive discussions and avoid heated arguments or flame wars. If a disagreement arises, handle it respectfully or take it to private messages.<br>
+                10. Listen to Warnings: If you receive a warning from a staff member, take it seriously and adjust your behavior accordingly. Ignoring warnings may result in further action, such as temporary or permanent bans.<br>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ballz Gobal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("discord-rules-heading").addEventListener("click", function() {
+            var rulesDiv = document.querySelector(".discord-rules");
+            this.classList.toggle("open"); // Toggles the "open" class on the heading
+            if (rulesDiv.style.display === "none") {
+                rulesDiv.style.display = "block";
+            } else {
+                rulesDiv.style.display = "none";
+            }
+         });
+    </script>
+</body>
+</html>
